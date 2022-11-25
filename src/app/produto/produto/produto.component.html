@@ -1,0 +1,17 @@
+<table mat-table [dataSource]="produto" class="mat-elevation-z8 demo-table">
+  <!-- Position Column -->
+  <ng-container matColumnDef="idproduto">
+    <th mat-header-cell *matHeaderCellDef> Id </th>
+    <td mat-cell *matCellDef="let element"> {{element.idproduto}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="nomeproduto">
+    <th mat-header-cell *matHeaderCellDef> Nome do produto </th>
+    <td mat-cell *matCellDef="let element"> {{element.nomeproduto}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

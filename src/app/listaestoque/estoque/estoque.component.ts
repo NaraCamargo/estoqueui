@@ -10,11 +10,11 @@ import { tabelaestoque } from 'src/app/core/model';
 export class EstoqueComponent implements OnInit {
 
   listaestoque: tabelaestoque [] = [
-    { id: 1, nomeestoque: 'x' },
-    { id: 2, nomeestoque: 'x' },
-    { id: 3, nomeestoque: 'x' },
-    { id: 4, nomeestoque: 'x' },
-    { id: 5, nomeestoque: 'x' }
+    { id: 1, nomeestoque: 'Blusa' },
+    { id: 2, nomeestoque: 'Calça' },
+    { id: 3, nomeestoque: 'Camisa' },
+    { id: 4, nomeestoque: 'Vestido' },
+    { id: 5, nomeestoque: 'Moletom' }
   ]
 
   displayedColumns: string[] = ['id', 'nomeestoque']

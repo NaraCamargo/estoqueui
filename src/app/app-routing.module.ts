@@ -7,6 +7,14 @@ const routes: Routes = [
   },
   {
     path: '', pathMatch: 'full', redirectTo: 'listaestoque'
+  },
+
+  {
+    path: 'produto', loadChildren: () => import('./produto/produto.module').then(m => m.ProdutoModule)
+  },
+  {
+
+  path: '', pathMatch: 'full', redirectTo: 'produto'
   }
 ];
 
